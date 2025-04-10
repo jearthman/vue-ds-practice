@@ -3,11 +3,9 @@ import { computed } from "vue";
 
 // Define the props for the button component
 // using TypeScript for type safety
-type ButtonVariant = "primary" | "secondary" | "tertiary";
-type ButtonSize = "small" | "medium" | "large";
 type ButtonProps = {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
+  variant?: "primary" | "secondary" | "tertiary";
+  size?: "small" | "medium" | "large";
   disabled?: boolean;
   loading?: boolean;
 };
